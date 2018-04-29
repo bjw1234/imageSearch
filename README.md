@@ -34,7 +34,7 @@ $('.loading').scrollLoading({
 	 src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==">
 ```
 
-__ 插件实现思路： __
+#### 插件实现思路： 
 
 通过给滚动容器绑定`scroll`事件，在滚动时判断元素（jQuery对象）是否位于可见区域，如果是则动态的改变`img`的`src`属性值。
 
@@ -62,7 +62,7 @@ container.bind('scroll',loading);
 # 瀑布流布局
 由于实现起来比较简单所以没有将其封装成插件。
 
-__ 实现思路： __
+#### 实现思路： 
 维护好一个数组，这个数组个数为流体布局的列数，数组元素为每一列的高度值。通过绝对定位的方式将每一个元素布局在合适的位置。
 这样说该是比较抽象的，且看代码示例：
 
@@ -100,14 +100,14 @@ boxes.each((index,item) => {
 通过事件代理，当用户点击某一张图片时，弹出一个弹框展示图片。
 `img`标签中需要传递的一些参数：
 
-__ 需要的一些参数： __
+#### 需要的一些参数： 
 data-role="lightbox"  // 启动LightBox插件
 data-id="xxxxxx" // 该图片的唯一标识符
 data-group="xxx-group" // 图片分组的名称
 data-source="xxx-url" // 原始大图地址
 data-caption="xxxx" // 图片的描述文字
 
-__ 使用方式： __
+#### 使用方式： 
 除了引入必要的js和css文件之外，在代码中`new`这个插件即可：
 
 ```js
