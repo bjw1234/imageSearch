@@ -14,7 +14,7 @@ https://bjw1234.github.io/imageSearch/
 # 懒加载插件
 使用`jQuery`封装一个简单的滚动加载插件`scrollLoading`。
 
-__ 使用方式： __
+#### 使用方式：
 
 ```js
 // jQuery对象调用scrollLoading方法即可。
